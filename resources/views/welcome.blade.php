@@ -7,14 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-        <title>slothme.co</title>
+        <title>Little fortune</title>
     </head>
   <style>
      body {
         font-family: 'Courgette', cursive;
-        background-color: #A58ABF;
+        background-color: white;
         text-align: center;
-        color: #F5F6F8;
+        color: #4AC4B9;
     }
     .full-height {
         height: 100vh;
@@ -64,7 +64,7 @@
             <div class="content">
                 <div class="title m-b-md">
 
-                    <img src="https://uppic.cc/d/5EKa" width=250 height=250/><br>
+                    <img src="{{ url('images/fox.png') }}" width=250 height=250/><br>
                     Little fortune..
                 </div>
             </div>
