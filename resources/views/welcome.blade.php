@@ -1,14 +1,8 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-    <title>Little fortune</title>
-</head>
+@extends('layouts.app')
+
+@section('title', 'Little Fortune')
+
+@section('extra-style')
 <style>
     body {
         font-family: 'Courgette', cursive;
@@ -58,16 +52,15 @@
         margin-bottom: 30px;
     }
 </style>
-</head>
-<body>
-    <div class="flex-center position-ref full-height">
+@endsection
+
+@section('content')
+    <div class="flex-center position-ref full-height">  
         <div class="content">
             <div class="title m-b-md">
-
                 <img src="{{ url('images/fox.png') }}" width=250 height=250/><br>
                 Little fortune..
             </div>
         </div>
     </div>
-</body>
-</html>
+@endsection
